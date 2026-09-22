@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="categories-index.css" rel="stylesheet"/>
+</head>
+<body>
+     <header>
+        <div class="headerFirstLine">
+             <div class="dmartLogo">
+            <a href="index.html"><img src="assets/apple-icon23783.jpg"/></a>
+            
+             <!-- onclick="window.location.href='index.html'"/> -->
+
+        </div>
+        <div class="dmartLocation" ><button id="locationbtn"><i class="fa-solid fa-location-dot"></i>Shivaji...<i class="fa-solid fa-angle-down"></i></button><br>
+        
+        <marquee id="locationScroll" direction="left">Anutej Atharv society, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra, India </marquee>
+
+        </div>
+
+        <div class="homeDeliveryTime">
+            <p>Earliest <span class="green">Home Delivery</span> available<br>
+                <span ><i class="fa-solid fa-alarm-clock"></i><b>Tomorrow 07:00 AM - 10:00 AM</b></span></p>
+        </div>
+
+        <div class="searchBox"><input type="search" id="searchInput" placeholder="Search for Ghee"/><button>search</button></div>
+
+        <div class="signIn"><i class="fa-regular fa-user"></i><a>Sign In / Register</a></div>
+        <div class="bell"><i class="fa-solid fa-bell"></i></div>
+        <div class="cart" ><sup class="total-cart" id="count">0</sup><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-indian-rupee-sign"></i><span id="cartTotal">0</span></div>
+
+        </div>
+
+        <div class="headerSecondLine">
+            <div class="allCategories">
+                <h4><i class="fa-solid fa-bars"></i>All Categories</h4>
+            </div>
+            <div class="categoriesBar" id="catBar">
+                <div>
+                    <ul id="filters"></ul>
+                    <!-- <li><a href="categories-index.html">DMart Grocery</a></li>
+                    <li id="filters">Ready to Cook</li>
+                    <li>Beverages</li>
+                    <li>Biscuits & Cookies</li>
+                    <li>Bath & Body</li>
+                    <li>Detergent & Fabric Care</li>
+                    <li>cleaners</li> -->
+
+            </div>
+            </div>
+        </div>
+       
+
+
+
+
+        
+       </header>  
+<section class="allCategories-section">
+            <aside>
+          <ul>
+            <li>Cooking Oil</li>
+            <li>Ghee & vanaspati</li>
+            <li>Rice</li>
+            <li>Masala & Spices</li>
+            <li>Flours & Grains</li>
+            <li>Dals</li>
+            <li>Dry Fruits</li>
+            <li>Salt/ Sugar / Jaggery</li>
+            <li>Pulses</li>
+            <li>Rice Products</li>
+            <li>DMart Grocery</li>
+          </ul>
+       </aside>
+
+       <div class="sub-Categories" id="subCategory">
+             <!-- <div class="product-Card" id="prodCard"></div> -->
+
+              
+       </div>
+       
+</section>
+    <hr>
+<script src="script.js"></script>
+</body>
+</html>

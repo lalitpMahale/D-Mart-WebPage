@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body> 
+       <header>
+        <div class="headerFirstLine">
+             <div class="dmartLogo">
+            <img src="assets/apple-icon23783.jpg"  
+            onclick="window.location.href='index.html'"/>
+
+        </div>
+        <div class="dmartLocation" ><button id="locationbtn"><i class="fa-solid fa-location-dot"></i>Shivaji...<i class="fa-solid fa-angle-down"></i></button><br>
+        
+        <marquee id="locationScroll" direction="left">Anutej Atharv society, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra, India </marquee>
+
+        </div>
+
+        <div class="homeDeliveryTime">
+            <p>Earliest <span class="green">Home Delivery</span> available<br>
+                <span ><i class="fa-solid fa-alarm-clock"></i><b>Tomorrow 07:00 AM - 10:00 AM</b></span></p>
+        </div>
+
+        <div class="searchBox"><input type="search" id="searchInput" placeholder="Search for Ghee"/><button>search</button></div>
+
+        <div class="signIn"><i class="fa-regular fa-user"></i><a>Sign In / Register</a></div>
+        <div class="bell"><i class="fa-solid fa-bell"></i></div>
+        <!-- <div class="cart"><i class="fa-solid fa-cart-shopping"></i><sup class="total-cart">0</sup><i class="fa-solid fa-indian-rupee-sign"></i>0</div> -->
+        <div class="cart" ><sup class="total-cart" id="count">0</sup><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-indian-rupee-sign"></i><span id="cartTotal">0</span></div>
+        
+        </div>
+
+        <div class="headerSecondLine">
+            <div class="allCategories" onclick="window.location.href='categories-index.html'">
+                <h4><i class="fa-solid fa-bars"></i>All Categories</h4>
+            </div>
+            <div class="categoriesBar" id="catBar">
+                <ul id="filters"></ul>
+                    <!-- <li><a href="categories-index.html">DMart Grocery</a></li> -->
+                    <!-- <li>Ready to Cook</li>
+                    <li>Beverages</li>
+                    <li>Biscuits & Cookies</li>
+                    <li>Bath & Body</li>
+                    <li>Detergent & Fabric Care</li>
+                    <li>cleaners</li> -->
+
+                
+            </div>
+        </div>
+       
+
+
+
+
+        
+       </header>  
+       
+       <section class="sliderSection">
+            <div class="slider">
+        <div class="slides" id="slides">
+            <div class="slide">
+                <img src="assets/1aug24-crsl-kitchenmela.jpg"/>
+            </div>
+            <div class="slide">
+                <img src="assets/1oct24-crsl-dg-mum.jpg"/>
+            </div>
+            
+            <div class="slide">
+                <img src="assets/30dec25-crsl-daily-saving.jpg">
+            </div>
+        </div>
+    </div>
+
+       </section>
+
+       <section class="categories-section">
+       
+        <h1 class="heading">Popular Categories</h1>
+        <div class="category-slider">
+            <!-- left slider button -->
+            <button class="arrow left-arrow"  id="leftArrow" ><i class="fa-regular fa-square-caret-left"></i></button>
+    
+            <!-- categories track -->
+             <div class="category-track" id="categoryTrack">
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/1may23-popularcat-dairy.png"/>
+
+                </div>
+                <p class="category-name">Dairy</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/12sept23-popularcat-tea1.png"/>
+
+                </div>
+                <p class="category-name">Tea</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/12sept23-popularcat-softdrinks.png"/>
+
+                </div>
+                <p class="category-name">Soft Drinks</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/1oct24-popularcat-cleaners.png"/>
+
+                </div>
+                <p class="category-name">Cleaners</p>
+                </div>
+
+                 <div class="category">
+                    <div class="image-box">
+                    <img src="assets/12jan24-popularcat-soaps.png"/>
+
+                </div>
+                <p class="category-name">Bath Soaps</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/12sept23-popularcat-toothpaste.png"/>  
+
+                </div>
+                <p class="category-name">Toothpaste</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/12jan24-popularcat-shampoos.png"/>  
+
+                </div>
+                <p class="category-name">Shampoos</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/12jan24-popularcat-shampoos.png"/>  
+
+                </div>
+                <p class="category-name">Pooja Needs</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/1apr24-popularcat-towels.png"/>  
+
+                </div>
+                <p class="category-name">Towels</p>
+                </div>
+
+                <div class="category">
+                    <div class="image-box">
+                    <img src="assets/1apr24-popularcat-bathroom.png"/>  
+
+                </div>
+                <p class="category-name">Bath Utility</p>
+                </div>
+
+                 <div class="category">
+                    <div class="image-box">
+                    <img src="assets/12jan24-popularcat-coffee.png"/>  
+
+                </div>
+                <p class="category-name">Coffee</p>
+                </div>
+
+               
+
+
+             </div>
+              <button class="arrow right-arrow " id="rightArrow"><i class="fa-regular fa-square-caret-right"></i></button>
+
+
+        </div>
+       </section>
+
+       <section class="celebration-card">
+         <div class="card">
+            <img src="assets/5spe26-ganesh.jpg">
+         </div>
+       </section>
+
+       <script src="script.js"></script>
+     
+</body>
+</html>
